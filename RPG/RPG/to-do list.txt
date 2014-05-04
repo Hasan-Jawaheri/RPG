@@ -1,0 +1,43 @@
+==========================================================================
+||||||||||||||||||||||||||||    TODO LIST:    ||||||||||||||||||||||||||||
+==========================================================================
+|	- Todo list started
+|
+|	- Change file system
+|		+ Add the HasX11 resources in one file
+|		+ Create a separate MODEL file that
+|			> A model can be a unit or a static object or an item
+|		+ Notion of a model should be redefined
+|
+|	- Change the resource manager implementation
+|		+ Separate resources storage completely
+|		+ Fix animation allocation
+|			> Different storage, save base animation + copies
+|
+?	- Investigate and fix the lighting problem
+?		> Could be materials being altered when resizing
+|
+|	- Implement the equipment system
+|		> Add them to filesystem and give them classes to have effects
+|
+*	- Improve animation quality
+		> walking should not be stoppable in the middle of the frames
+
+	- Add enemies to fight
+
+	- Add more spells to the game
+
+	- Create a combat system
+		+ Create dummy AIs to fight
+		+ Work on death conditions and animation
+		+ Upgrade the combo system
+			> E.g. sword spells cannot be cast without a sword
+		+ Add Slow-mo
+
+==========================================================================
+
+==========================================================================
+||||||||||||||||||||||||||||       NOTES:     ||||||||||||||||||||||||||||
+==========================================================================
+	- Equipment is not working at the moment
+==========================================================================

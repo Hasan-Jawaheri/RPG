@@ -8,4 +8,6 @@ const unsigned int SPELLID_DASHS1 = 4;
 const unsigned int SPELLID_DEATHGRIP = 5;
 const unsigned int SPELLID_DARKMETEOR = 6;
 
+const unsigned int SPELLID_OPEN_ARENA_DOOR = 7;
+
 #endif

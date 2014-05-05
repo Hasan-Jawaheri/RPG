@@ -20,12 +20,12 @@ void Player::Load ( void ) {
 	Unit::Load ( );
 
 	//load an equipment as a test
-	Equip ( SLOT_WEAPON1, 1 );
-	//Equip ( SLOT_HEAD, 2 );
-	Equip ( SLOT_PANTS, 3 );
-	Equip ( SLOT_SHOULDERS, 4 );
-	Equip ( SLOT_BELT, 5 );
-	Equip ( SLOT_BOOTS, 6 );
+	Equip ( SLOT_WEAPON1, 2 );
+	//Equip ( SLOT_HEAD, 3 );
+	Equip ( SLOT_PANTS, 4 );
+	Equip ( SLOT_SHOULDERS, 5 );
+	Equip ( SLOT_BELT, 6 );
+	Equip ( SLOT_BOOTS, 7 );
 }
 
 void Player::Destroy ( void ) {

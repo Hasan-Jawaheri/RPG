@@ -82,6 +82,18 @@ void Game::Update ( float fDeltaTime ) {
 	if ( player ) {
 		ui.playerHealth->SetHealth ( player->curStats.health * 100.0f / player->curStats.maxHealth );
 		ui.playerHealth->SetPower ( player->curStats.mana * 100.0f / player->curStats.maxMana );
+
+		/****************************************************************/
+		hxOrientationDevice* dev = player->GetOriDev ( );
+		if ( dev ) {
+			char text[256];
+			hxVector3 pos = dev->GetPosition ( );
+			hxVector3 ang = dev->GetAngle ( );
+			sprintf_s ( text, 256, "(%.2f,%.2f,%.2f) - (%.2f,%.2f,%.2f)",
+				pos.x, pos.y, pos.z, ang.x, ang.y, ang.z );
+			core->Renderer->RenderText ( text, 5, 100, 1, hxColor ( 0.4, 0.4, 1 ) );
+		}
+		/****************************************************************/
 	}
 	if ( target && UnitManager::UnitExists ( target ) ) {
 		ui.targetHealth->SetHealth ( target->curStats.health * 100.0f / target->curStats.maxHealth );
